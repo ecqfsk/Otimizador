@@ -1,0 +1,35 @@
+coleta:
+  intervalo-memoria-segundos: 5
+  intervalo-mundo-segundos: 10
+
+memoria:
+  alertas:
+    percentual-heap-atencao: 70
+    percentual-heap-alta: 85
+    percentual-heap-critico: 95
+    overhead-gc-atencao-percent: 5
+    overhead-gc-alta-percent: 10
+    overhead-gc-critico-percent: 25
+
+controle-adaptativo:
+  habilitado: true
+  histerese-percentual: 5
+  persistencia-subida-segundos: 30
+  persistencia-queda-segundos: 60
+
+# Segurança: descarrega chunks à distância, longe de jogadores e do spawn.
+# Mude para true somente se quiser que o plugin faça isso sob pressão crítica.
+chunks:
+  desativacao:
+    habilitado: false
+
+# Segurança: apaga itens/mobs sem você clicar em nada. Proteções ativas:
+# idade mínima, tetos por ciclo, materiais protegidos e mobs ignorados.
+# true só se você aceitar remoção automática de entidades.
+entidades:
+  itens-no-chao:
+    remocao:
+      habilitado: false
+  mobs:
+    remocao:
+      habilitado: false

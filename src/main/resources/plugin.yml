@@ -1,0 +1,66 @@
+name: Otimizador
+version: 1.0.0
+main: dev.miguel.otimizador.Otimizador
+api-version: '26.2'
+description: Diagnóstico de memória, controle de recursos e otimização adaptativa para Paper 26.2
+author: Miguel
+website: https://github.com/miguel/otimizador
+load: POSTWORLD
+
+# Kotlin stdlib carregado do Maven Central (sem shading, sem dependências desnecessárias)
+libraries:
+  - org.jetbrains.kotlin:kotlin-stdlib:2.4.21
+  - org.jetbrains:annotations:24.1.0
+
+commands:
+  otimizador:
+    description: Comandos do Otimizador (diagnóstico e otimização de memória)
+    usage: /otimizador <status|memory|diagnose|chunks|entities|report|optimize|modules|reload|help>
+    permission: otimizador.help
+    permission-message: Você não tem permissão para usar o Otimizador.
+
+permissions:
+  otimizador.admin:
+    description: Acesso total ao Otimizador (concede todos os nós filhos)
+    default: op
+    children:
+      otimizador.status: true
+      otimizador.memory: true
+      otimizador.diagnose: true
+      otimizador.chunks: true
+      otimizador.entities: true
+      otimizador.report: true
+      otimizador.optimize: true
+      otimizador.modules: true
+      otimizador.reload: true
+      otimizador.help: true
+  otimizador.status:
+    description: Ver o resumo de memória e estado (/otimizador status)
+    default: op
+  otimizador.memory:
+    description: Ver métricas detalhadas de memória (/otimizador memory)
+    default: op
+  otimizador.diagnose:
+    description: Executar diagnóstico de possíveis causas (/otimizador diagnose)
+    default: op
+  otimizador.chunks:
+    description: Ver relatório de chunks (/otimizador chunks)
+    default: op
+  otimizador.entities:
+    description: Ver relatório de entidades (/otimizador entities)
+    default: op
+  otimizador.report:
+    description: Gerar relatório completo em arquivo (/otimizador report)
+    default: op
+  otimizador.optimize:
+    description: Aplicar otimizações seguras autorizadas (/otimizador optimize)
+    default: op
+  otimizador.modules:
+    description: Consultar módulos ativos (/otimizador modules)
+    default: op
+  otimizador.reload:
+    description: Recarregar configurações (/otimizador reload)
+    default: op
+  otimizador.help:
+    description: Ver a ajuda do Otimizador (/otimizador help)
+    default: op
