@@ -1,8 +1,8 @@
 name: Otimizador
 version: 1.0.0
 main: dev.miguel.otimizador.Otimizador
-api-version: '26.2'
-description: Diagnóstico de memória, controle de recursos e otimização adaptativa para Paper 26.2
+api-version: '26.3'
+description: Diagnóstico de memória, controle de recursos e otimização adaptativa para Paper 26.3 (MC 1.21.11)
 author: Miguel
 website: https://github.com/miguel/otimizador
 load: POSTWORLD

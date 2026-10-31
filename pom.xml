@@ -14,17 +14,17 @@
     <packaging>jar</packaging>
 
     <name>Otimizador</name>
-    <description>Plugin de diagnóstico, controle de recursos e otimização adaptativa de memória para Paper 26.2</description>
+    <description>Plugin de diagnóstico, controle de recursos e otimização adaptativa de memória para Paper 26.3 (MC 1.21.11)</description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <kotlin.version>2.4.21</kotlin.version>
-        <!-- Último build estável da linha 26.2 (formato oficial desde 26.1: {versao}.build.{n}-stable) -->
-        <paper.version>26.2.build.135-stable</paper.version>
+        <!-- Último build estável da linha 26.3 (suporte a MC 1.21.11; formato: {linha}.build.{n}-stable) -->
+        <paper.version>26.3.build.235-stable</paper.version>
         <junit.version>5.14.4</junit.version>
         <!-- Plataforma JUnit segue o mesmo ciclo do Jupiter (5.14.x -> 1.14.x) -->
         <junit.platform.version>1.14.4</junit.platform.version>
-        <!-- Paper 26.2 exige JDK 25 para desenvolvimento e execução -->
+        <!-- Paper 26.3 exige JDK 25 para desenvolvimento e execução -->
         <maven.compiler.release>25</maven.compiler.release>
         <kotlin.jvm.target>25</kotlin.jvm.target>
     </properties>
@@ -37,7 +37,7 @@
     </repositories>
 
     <dependencies>
-        <!-- API pública do Paper 26.2 (fornecida pelo servidor em tempo de execução) -->
+        <!-- API pública do Paper 26.3 (fornecida pelo servidor em tempo de execução) -->
         <dependency>
             <groupId>io.papermc.paper</groupId>
             <artifactId>paper-api</artifactId>

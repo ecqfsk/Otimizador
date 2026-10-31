@@ -138,13 +138,13 @@ object JvmAnalyzer {
     fun recommendations(info: JvmInfo, obs: ObservedStats): List<JvmRecommendation> {
         val out = ArrayList<JvmRecommendation>(6)
 
-        // 1) Versão incompatível com Paper 26.2 (exige Java 25)
+        // 1) Versão incompatível com Paper 26.3 (exige Java 25)
         if (info.javaMajor in 1..24) {
             out.add(
                 JvmRecommendation(
                     id = "java-versao",
-                    title = "JVM abaixo da versão exigida pelo Paper 26.2",
-                    detail = "Executando Java ${info.javaMajor} (${info.javaVersion}). O Paper 26.2 exige JDK/JRE 25. Atualize a JVM usada no script de inicialização.",
+                    title = "JVM abaixo da versão exigida pelo Paper 26.3",
+                    detail = "Executando Java ${info.javaMajor} (${info.javaVersion}). O Paper 26.3 exige JDK/JRE 25. Atualize a JVM usada no script de inicialização.",
                     risk = "Servidores com versão inferior podem nem iniciar; não há como trocar a JVM em execução.",
                     priority = 1,
                 )

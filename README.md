@@ -1,7 +1,7 @@
 # Otimizador
 
 Plugin de **diagnóstico, controle de recursos e otimização adaptativa de memória**
-para servidores **Paper 26.2** (Java 25), escrito em **Kotlin** e construído com **Maven**.
+para servidores **Paper 26.3** (MC 1.21.11, Java 25), escrito em **Kotlin** e construído com **Maven**.
 
 O objetivo é simples: reduzir desperdício de RAM com segurança e ajudar a encontrar a
 **causa real** do consumo — separando sempre o que é fato do que é hipótese.
@@ -63,7 +63,7 @@ cd "/home/miguel/Documentos/Projeto Padrão"
 $HOME/devtools/apache-maven-3.10.0/bin/mvn -B package
 ```
 
-Dependências principais: `paper-api 26.2.build.135-stable` (escopo `provided`), Kotlin
+Dependências principais: `paper-api 26.3.build.235-stable` (escopo `provided`), Kotlin
 `2.4.21` (`jvmTarget 25`), JUnit Jupiter `5.14.4` + `junit-platform-launcher 1.14.4`
 (alinhados para o Surefire descobrir os testes).
 
